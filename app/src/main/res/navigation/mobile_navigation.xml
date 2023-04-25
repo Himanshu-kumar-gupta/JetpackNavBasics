@@ -40,8 +40,10 @@
             app:argType="integer"
             android:defaultValue="1"/>
 
+<!--        In case of both popUpTo and destination always destination is executed-->
         <action
             android:id="@+id/next_action"
+            app:popUpTo="@id/home_dest"
             app:destination="@+id/flow_step_two_dest">
         </action>
     </fragment>
